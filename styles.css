@@ -102,3 +102,45 @@ main > img{
     font-size: 25px;
     margin-top: 30px;
 }
+.contact{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.contact > h2{
+    font-size: 30px;
+}
+.contact > ul{
+    margin-bottom: 50px;
+}
+.contact > ul > li{
+    font-size: 18px;
+}
+.contact > a{
+    background: linear-gradient(0deg, #406adf, #9ee7ff);
+    padding: 16px 12px;
+    border-radius: 10px;
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+}
+.contact > a:hover{
+    background: linear-gradient(180deg, #587bdc, #abe0f2);
+    color: rgb(0, 0, 152);
+    transition: 0.2s;
+}
+.contact > a::after{
+    display: block;
+    margin: auto;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(0, 0, 152);
+    content: '';
+    position: absolute;
+    left: 10px;
+}
+.contact > a:hover::after{
+    width: 180px;
+    transition: 0.1s ease-in;
+}
