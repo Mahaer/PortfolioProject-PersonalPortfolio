@@ -1,3 +1,104 @@
 :root{
     color-scheme: light only;
 }
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(0deg, #406adf, #9ee7ff);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0px 0px 15px black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+header > img{
+    width: 100px;
+    height: 100px;
+}
+.name{
+    display: flex;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-right: 20%;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+}
+nav ul a li{
+    display: inline;
+    font-size: 22px;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+nav ul a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    background-color: black;
+}
+nav ul a:hover{
+    color: black;
+    transition: 0.2s;
+}
+nav ul a:hover::after{
+    width: 100%;
+    transition: 0.1s;
+}
+main > img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: -5;
+}
+.overlay{
+    opacity: .73;
+}
+.card{
+    background: linear-gradient(0deg, #406adf, #9ee7ff);
+    border-radius: 10px;
+    width: 1000px;
+    margin: 100px auto;
+    height: 450px;
+    box-shadow: 5px 10px 25px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card > h2{
+    margin: 0px;
+    font-size: 32px;
+}
+.card > div{
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+}
+.card > div > div > img{
+    width: 300px;
+}
+.card > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+}
+.card > div > p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+.card > div > ul > li{
+    font-size: 25px;
+    margin-top: 30px;
+}
